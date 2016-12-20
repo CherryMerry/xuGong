@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 640px) {
+
+    header .pageheader .logo{
+        width:80% ;
+        height: auto;
+        padding-top: 35px;
+
+    }
+    header .pageheader .logo img{
+
+        width: 100%;
+        height: 100%;
+
+    }
+    header .pageheader .logoimg{
+
+        display: none;
+    }
+
+    header .pageheader .tool{
+        display: none;
+    }
+
+
+    header .pageheader .toolmobile{
+        color: rgba(59,145,228,1);
+        font-size: 25px;
+        font-weight: bold;;
+        width: 180px;
+        height: 25px;
+        position: absolute;
+        right:5px;
+        top:35px;
+        text-align: right;
+        line-height: 25px;
+        overflow: hidden;
+    }
+
+    header .pageheader .toolmobile img{
+
+        width: 25px;
+        height: 25px;
+
+    }
+
+
+    /*设置大背景图*/
+    .content .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* 设置手机版divlist*/
+    .content .bannerlist{
+
+        width: 100%;
+        margin-top: 30px;
+
+
+
+    }
+    .content .bannerlist .bannerlistdetail{
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli{
+       width: 96%;
+       margin-left: 2%;
+        font-size: 14px;
+        color: gray;
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div{
+
+        width: 100%;
+        position: relative;
+
+    }
+    .content .bannerlist .bannerlistdetail .divli>div img{
+
+        width: 100%;
+    }
+
+    /*控制第一个列表*/
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv{
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(0,0,0,0.6);
+        -webkit-transition: all 0.2s;
+
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv:hover{
+        background-color: rgba(26,110,183,0.95);
+
+    }
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv:hover p{
+
+        background-position-y:-55px ;
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv p{
+        width: 50px;
+        height: 50px;
+        margin: 50px auto;
+        background-image: url("../image/ipro_bg.png");
+
+    }
+
+    /*控制列表下的目录按钮*/
+    .content .bannerlist .bannerlistdetail .catabt{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        right: 0px;
+        bottom:2px;
+        background-color: red;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        line-height: 40px;
+        background-color: rgba(0,0,0,0.8);
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div:hover .catabt{
+        background-color: rgba(28,103,201,1);
+
+    }
+
+
+
+    /*新闻与媒体*/
+
+    .content .leftnews{
+        width: 100%;
+        margin-left: 2%;
+        height: 230px;
+
+    }
+
+    .content .leftnews .firstleftnews,.content .leftnews .secondleftnews{
+
+        display: none;
+    }
+
+    .content .leftnews .firstleftnewsmobile{
+
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        float: left;
+        position: relative;
+
+    }
+
+    .content .leftnews .firstleftnewsmobile img{
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .content .leftnews .firstleftnewsmobile h2{
+        font-size: 30px;
+
+    }
+
+    /*新闻与媒体  右边div*/
+    /*右侧div*/
+
+    .content .rightnews{
+        width: 98%;
+        margin-right: 2%;
+        padding-top: 120px;
+
+    }
+
+    .rightnews .rightnewsdiv{
+
+        width: 96%;
+        height: 135px;
+        margin-left: 2%;
+        border: 1px solid gray;
+        margin-top: 10px;
+        padding-left: 2%;
+
+    }
+
+    .rightnews .rightnewsdiv h4{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .rightnews .rightnewsdiv span,.rightnews .rightnewsdiv p{
+
+        font-size: 12px;
+        color: gray;
+        margin-top: 5px;
+        line-height: 20px;
+
+    }
+
+    /*了解徐工*/
+    .ljxg{
+        display: none;
+    }
+
+    .ljxgmobile {
+        border: 1px solid lightgray;
+        margin-top: 10px;
+
+    }
+    .ljxgmobile h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+
+    }
+    .ljxgmobile li{
+
+        color: gray;
+        line-height: 40px;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    .ljxgmobile .imgdiv{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .ljxgmobile .imgdiv:hover img{
+
+        transform: scale(1.2,1.2);
+    }
+
+
+    .ljxgmobile .imgdiv:hover .catabt{
+
+        -webkit-opacity: 0.8;
+    }
+
+    .ljxgmobile .imgdiv img{
+
+        width: 100%;
+        -webkit-transition: all 1s;
+    }
+
+    .ljxgmobile .imgdiv .catabt{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background:url("../image/more_btn.png");
+    }
+
+    .ljxgmobile  h3{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .ljxgmobile  h4{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        color: gray;
+
+    }
+
+
+
+    /*右边*/
+    .right .imgdiv{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .right .imgdiv:hover img{
+
+        transform: scale(1.2,1.2);
+    }
+
+    .right .imgdiv img{
+        width: 100%;
+        -webkit-transition: all 1s;
+    }
+
+    .ljxgmobile h4{
+        color: black;
+        font-size: 16px;
+        line-height: 12px;
+
+    }
+    .ljxgmobile .last{
+        font-size: 14px;
+        text-align: center;
+        color: gray;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+
+
+    footer .footer{
+
+        width: 100%;
+        height: 200px;
+        background-color: rgba(1,1,1,0.8);
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        line-height: 100px;
+    }
+
+}

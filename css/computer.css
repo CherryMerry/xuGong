@@ -1,0 +1,604 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+/*设置头部的高度*/
+header{
+    height: 90px;
+
+}
+
+/*设置pageheader样式*/
+header .pageheader{
+    position: relative;
+    width: 93%;
+    height: 100%;
+    background-image: url("../image/nav.png");
+
+    margin: 0 auto;
+
+
+}
+
+@media screen and (min-width: 640px) {
+
+
+
+    /*控制地图显示隐藏*/
+    header .pageheader .map{
+        width: 100%;
+        height: 0px;
+        background-color: rgba(0,0,0,0.7);
+        position: absolute;
+        left: 0px;
+        top: 90px;
+
+    }
+
+
+
+
+    /*设置pageheader logo样式*/
+    header .pageheader .logo{
+        position: absolute;
+        left:20px;
+        top:40px;
+    }
+    header .pageheader .logoimgmobile{
+
+        display: none;
+    }
+
+    header .pageheader .toolmobile{
+
+        display: none;
+    }
+
+    /*设置工具条*/
+    header .pageheader .tool{
+
+        width: 400px;
+        height: 35px;
+        position: absolute;
+        right: 110px;
+        top: 5px;
+
+    }
+
+    /*控制td中icon，显示小人图标*/
+    header .pageheader .tool  .icon{
+        background-image: url("../image/ico.png");
+        width:16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+
+    /*控制td中icondiv，显示登录/注册*/
+    header .pageheader .tool .icondiv{
+        position: absolute;
+        left: 25px;
+        top: 7px;
+    }
+
+    /*控制小球div*/
+    header .pageheader .tool .explor{
+        width: 90px;
+        height: 22px;
+        position: absolute;
+        left: 111px;
+        top: 3px;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: right;
+        border: 1px solid #fff;
+    }
+
+    /*控制小球显示边框*/
+    header .pageheader .tool .explor:hover{
+        border: 1px solid darkgray;
+    }
+
+    header .pageheader .tool .exploricon{
+        background-image: url("../image/ico.png");
+        background-position-x: -22px;
+        width:16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+
+    }
+
+    /*设置放大镜*/
+    header .pageheader .tool  .search{
+        width:16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 207px;
+        top: 3px;
+    }
+
+
+
+    /************** menu样式 **************/
+    header .pageheader .menu{
+        width: 640px;
+        height: 50px;
+        position: absolute;
+        right: 90px;
+        top: 40px;
+    }
+
+    header .pageheader .menu>ul>li{
+
+        float: left;
+        list-style: none;
+        width: 128px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height:50px ;
+        text-align: center;
+
+    }
+
+    /*当鼠标移动到菜单上*/
+    header .pageheader .menu>ul>li:hover{
+        background-color: rgba(0,0,0,0.9);
+        color:#fff;
+
+    }
+
+    /*找到子菜单*/
+    header .pageheader .menu>ul>li>ul>li{
+        list-style: none;
+        line-height:30px ;
+
+    }
+
+    header .pageheader .menu>ul>li>ul{
+        background-color: rgba(0,0,0,0.9);
+        font-size: 12px;
+        text-align: left;
+        padding-left: 20px;
+        height: 0px;
+        overflow: hidden;
+        -webkit-transition: height 0.5s;
+
+    }
+
+
+    /*设置大背景图*/
+    .content .banner img{
+        width: 100%;
+        height: 670px;
+    }
+
+
+    /*控制 招投标/上市公司*/
+    header .pageheader .tool .last{
+        width: 133px;
+        height: 22px;
+        position: absolute;
+        left: 245px;
+        top: 3px;
+        font-size: 12px;
+        line-height: 22px;
+
+        border: 1px solid silver;
+        text-align: center;
+    }
+
+
+
+    /** 通过绝对定位让当前背景图不占据空间*/
+    .content .banner{
+        position: absolute;
+        left: 0px;
+        top:0px;
+        /*改变当前视图的显示优先级*/
+        z-index: -10;
+
+
+
+
+    }
+
+    .content .bannerlist{
+        height: 220px;
+        margin-top: 600px;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .content .bannerlist .bannerlistdetail{
+        width: 102%;
+        height: 100%;
+
+
+    }
+
+
+    .content .bannerlist .bannerlistdetail .divli{
+        width: 23%;
+        float: left;
+        margin-right: 2%;
+
+    }
+    .content .bannerlist .bannerlistdetail .divli>div{
+
+        position: relative;
+
+    }
+
+
+    .content .bannerlist .bannerlistdetail .divli>div:hover .catabt{
+        background-color: rgba(28,103,201,1);
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv{
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(0,0,0,0.6);
+        -webkit-transition: all 0.2s;
+
+
+    }
+
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv:hover{
+        background-color: rgba(26,110,183,0.95);
+
+    }
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv:hover p{
+
+         background-position-y:-55px ;
+    }
+
+
+
+    .content .bannerlist .bannerlistdetail .divli>div .centerdiv p{
+        width: 50px;
+        height: 50px;
+        margin: 30px auto;
+        background-image: url("../image/ipro_bg.png");
+
+    }
+
+
+
+    .content .bannerlist .bannerlistdetail .divli span{
+        color: gray;
+        font-size: 14px;
+
+
+    }
+
+
+    .content .bannerlist .bannerlistdetail .divli img{
+        width: 100%;
+        height: auto;
+
+    }
+    .content .bannerlist .bannerlistdetail .catabt{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        right: 0px;
+        bottom:2px;
+        background-color: red;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        line-height: 40px;
+        background-color: rgba(0,0,0,0.8);
+
+    }
+
+
+    /*新闻与媒体*/
+
+    .content .leftnews{
+        width: 48%;
+        height: 500px;
+        float: left;
+        margin-left: 2%;
+
+    }
+    .content .rightnews{
+          width: 48%;
+          height: 500px;
+          float: right;
+          margin-right: 2%;
+          padding-top: 20px;
+
+      }
+
+    .content .leftnews .firstleftnews{
+
+        width: 50%;
+        height: 100%;
+        margin-top: 20px;
+        float: left;
+        position: relative;
+
+
+
+    }
+    .content .leftnews .firstleftnewsmobile{
+        display: none;
+    }
+
+
+    .content .leftnews .secondleftnews{
+
+        width: 50%;
+        height: 100%;
+        float: left;
+        margin-top: 20px;
+
+
+    }
+
+    .content .leftnews .firstleftnews img, .content .leftnews .secondleftnews img{
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .content .leftnews .firstleftnews h2,.content .leftnews .secondleftnews h2{
+        font-size: 30px;
+
+
+    }
+    .content .leftnews .firstleftnews .p1 ,  .content .leftnews .secondleftnews .p1{
+        width: 50px;
+        height: 50px;
+        background: gray;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 5px;
+        display: inline-block;
+
+    }
+    .content .leftnews .firstleftnews .p1:hover,   .content .leftnews .secondleftnews .p1:hover{
+
+        background-color: blue;
+    }
+
+    .content .leftnews .firstleftnews .p1 span, .content .leftnews .secondleftnews .p1 span{
+
+        font-size: 26px;
+    }
+
+    .content .leftnews .firstleftnews .text,.content .leftnews .secondleftnews .text{
+
+        color: gray;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /*右侧div*/
+    .rightnews .rightnewsdiv{
+
+        width: 96%;
+        height: 125px;
+        margin-left: 2%;
+        border: 1px solid gray;
+        margin-top: 10px;
+        padding-left: 2%;
+
+    }
+
+    .rightnews .rightnewsdiv h4{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .rightnews .rightnewsdiv span,.rightnews .rightnewsdiv p{
+
+        font-size: 12px;
+        color: gray;
+        margin-top: 5px;
+        line-height: 20px;
+
+    }
+
+    /*了解徐工*/
+
+    .ljxgmobile{
+        display: none;
+    }
+    .content .showxg{
+        width: 96%;
+        height: 530px;
+        margin-left: 2%;
+        border: 1px solid lightgray;
+        clear: both;;
+    }
+
+    .content .showxg .left {
+        width: 50%;
+        height: 100%;
+        float: left;
+
+
+    }
+
+    .content .showxg .left h1{
+        color: gray;
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    .content .showxg .left .table1{
+        width: 86%;
+        margin-left: 7%;
+        margin-top: 10px;
+
+
+    }
+    .content .showxg .left .table1 td{
+
+        width: 50%;
+        text-align: left;
+        line-height: 55px;
+        vertical-align: middle;;
+    }
+
+    .content .showxg .left .table1 td i{
+        display: inline-block;
+        width: 33px;
+        height: 32px;
+        background: url("../image/i_ab_arr.png");
+        vertical-align: middle;;
+        margin-right: 5px;
+        
+
+    }
+    .content .showxg .left .table2{
+        margin-top: 20px;
+
+
+    }
+
+    .content .showxg .left .table2 td{
+
+        background-color: lightgray;
+        position: relative;
+    }
+
+    .content .showxg .left .table2 td h2,.content .showxg .left .table2 td h4{
+        color: gray;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+
+
+    .content .showxg .left .table2 .td1{
+        width: 58%;
+        overflow: hidden;
+    }
+    .content .showxg .left .table2 img{
+
+        width: 100%;
+        -webkit-transition: all 1s;
+    }
+    .content .showxg .left .table2 .catabt{
+
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background:url("../image/more_btn.png");
+    }
+
+    .content .showxg .left .table2:hover img{
+        transform:scale(1.2,1.2);
+    }
+
+    .content .showxg .left .table2:hover .catabt{
+       -webkit-opacity: 0.5;
+    }
+
+    .content .showxg .right {
+        width: 50%;
+        height: 100%;
+        float: left;
+
+
+    }
+
+    .content .showxg .right table{
+
+        width: 90%;
+        margin-left: 5%;
+
+    }
+
+    .content .showxg .right td{
+        width: 50%;
+        font-size: 12px;
+        color: gray;
+    }
+    .content .showxg .right td h2{
+
+        color: black;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .content .showxg .right .imgdiv{
+
+        width: 98%;
+        margin-left: 2%;
+        overflow: hidden;
+    }
+    .content .showxg .right img{
+
+        width: 100%;
+        -webkit-transition: all 1s;
+    }
+
+    .content .showxg .right:hover img{
+
+        transform: scale(1.2,1.2);
+    }
+
+
+
+
+
+
+}
+
+
+
+/*1100px 的时候隐藏掉*/
+@media screen and (max-width: 1100px) {
+
+    header .pageheader .menu{
+
+        display: none;
+
+    }
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1100px){
+    header .pageheader .logo{
+        width:28% ;
+        height: auto;
+    }
+    header .pageheader .logo img{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+}

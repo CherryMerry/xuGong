@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript"
+            src="../js/jquery-2.2.3.min.js"></script>
+</head>
+
+<!--脚本语言用来控制地图页面的显示-->
+<script>
+
+    $(function(){
+
+        //当鼠标移动到地球图标，展示出地图
+        $(".explor").hover(function(){
+//            $(".map").animate({"height":"500px"});
+        });
+
+        //当鼠标从map中移走的时候隐藏地图
+        $(".map").mouseleave(function(){
+//            $(".map").animate({"height":"0px"});
+        });
+
+        //当菜单被覆盖，让下面的子菜单慢慢的弹出来
+        $(".firstli").hover(function(){
+
+            var count=$(this).children("ul").first().children("li").length;
+
+           $(this).children("ul").css({"height":count*32});
+
+
+        }, function () {
+            $(this).children("ul").css({"height":0});
+        });
+
+
+
+    });
+
+
+</script>
+
+
+<body>
+
+<!--网页的头部-->
+<header>
+
+    <div class="pageheader">
+        <!-- logo图标-->
+        <div class="logo">
+            <img src="../image/logo.png" class="logoimg">
+            <img src="../image/logomobile.png" class="logoimgmobile">
+        </div>
+
+        <!--  电脑版工具条-->
+        <div class="tool">
+            <i  class="icon"></i>
+            <div class="icondiv">登录 / 注册</div>
+            <div class="explor">
+                <i class="exploricon"></i>
+                Language&nbsp;&nbsp;
+            </div>
+            <!-- 放大镜搜索-->
+            <i class="search">
+                🔍
+            </i>
+
+            <!-- 招投标\上市公司-->
+            <div class="last">
+                招投标 | 上市公司
+
+            </div>
+        </div>
+
+        <!--  手机版工具条-->
+        <div class="toolmobile">
+            产品&nbsp;
+            <img src="../image/earth.png">
+            &nbsp;
+            <img src="../image/search.png">
+            &nbsp;
+            <img src="../image/more.png">
+        </div>
+
+
+
+        <!--  下拉菜单-->
+        <div class="menu">
+            <ul>
+                <li class="firstli">走进徐工
+                  <ul>
+                      <li>了解徐工</li>
+                      <li>全球徐工</li>
+                      <li>品牌文化</li>
+                      <li>社会责任</li>
+                      <li>里程碑</li>
+                      <li>联系我们</li>
+                  </ul>
+
+                </li>
+                <li class="firstli" >实力徐工
+                    <ul>
+                        <li>品质徐工</li>
+                        <li>创新徐工</li>
+                        <li>高效文化</li>
+                        <li>智慧责任</li>
+                    </ul>
+                </li>
+                <li class="firstli">媒体聚焦
+                    <ul>
+                        <li>徐工新闻</li>
+                        <li>媒体试点</li>
+                        <li>社交媒体</li>
+                        <li>影像徐工</li>
+                    </ul>
+                </li>
+                <li class="firstli">工作机会
+
+                    <ul>
+                        <li>加入徐工</li>
+                        <li>发展平台</li>
+                        <li>成长在徐工</li>
+
+                    </ul>
+                </li>
+                <li class="firstli">互动专区
+                    <ul>
+                        <li>品牌活动</li>
+                        <li>市场推广活动</li>
+                        <li>服务活动</li>
+                        <li>新媒体互动</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- 增加下拉地图-->
+        <div class="map"></div>
+
+
+    </div>
+
+
+</header>
+
+
+
+
+
+<!--网页的主体-->
+<div class="content">
+
+    <!-- banner 背景图-->
+    <div class="banner">
+        <img src="../image/back.jpg">
+    </div>
+
+    <!-- 缩略图列表 -->
+    <div class="bannerlist">
+        <div class="bannerlistdetail">
+            <div class="divli">
+                <div>
+                    <img src="../image/img1.jpg">
+                    <div class="centerdiv">
+                         <p></p>
+                         帮您找产品
+
+                    </div>
+
+                </div>
+                <br/>
+                <span>提供全球信赖的解决方案</span>
+                <br/><br/>
+            </div>
+            <div class="divli">
+                <div>
+                    <img src="../image/img2.jpg">
+                    <div class="catabt">服务</div>
+                </div>
+
+                <br/>
+                <span>提供全球信赖的解决方案</span>
+                <br/>
+                <br/>
+
+            </div>
+            <div class="divli">
+                <div>
+                    <img src="../image/img3.jpg">
+                    <div class="catabt">活动</div>
+                </div>
+                <br/>
+                <span>提供全球信赖的解决方案</span>
+                <br/>
+                <br/>
+
+            </div>
+            <div class="divli">
+                <div> <img src="../image/img4.jpg">
+                    <div class="catabt">视频</div></div>
+                <br/>
+                <span>提供全球信赖的解决方案</span>
+                <br/>
+                <br/>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 新闻与媒体-->
+    <div class="leftnews">
+
+        <div class="firstleftnews">
+            <h2>新闻与媒体</h2>
+            <img src="../image/first.jpg">
+              <table width="100%">
+                  <tr>
+                      <td>
+                          <p class="p1">
+                          <span>09</span>
+                          05,2016
+                          </p>
+                      </td>
+                      <td>
+
+                           【“互联网技术+平台型企业”】 徐工携手阿里“云端”布棋局
+
+                      </td>
+
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td class="text">
+                          未来，是创新和共享的时代，对企业来说，倘若囿于一己之私、固步于三分之地，只能换来羸弱与消亡。只有用“大画幅”的眼光，站在更高的格局之上去创新、变革、分享，“联接”更多价值与资源，打造惠及多方的健康生态...
+                      </td>
+
+                  </tr>
+
+
+
+
+
+              </table>
+
+
+        </div>
+        <div class="secondleftnews">
+
+            <h2>&nbsp;</h2>
+            <img src="../image/second.jpg">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <p class="p1">
+                            <span>09</span>
+                            05,2016
+                        </p>
+                    </td>
+                    <td>
+
+                        【“互联网技术+平台型企业”】 徐工携手阿里“云端”布棋局
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text">
+                        未来，是创新和共享的时代，对企业来说，倘若囿于一己之私、固步于三分之地，只能换来羸弱与消亡。只有用“大画幅”的眼光，站在更高的格局之上去创新、变革、分享，“联接”更多价值与资源，打造惠及多方的健康生态...
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- 新闻与媒体 手机版-->
+        <div class="firstleftnewsmobile">
+            <h2>新闻与媒体</h2>
+             <table width="100%">
+                 <tr>
+                     <td width="33%">
+                         <img src="../image/first.jpg">
+                     </td>
+                     <td>【“互联网技术+平台型企业”】 徐工携手阿里“云端”布棋局
+                     </td>
+                 </tr>
+                 <tr>
+                     <td width="33%">
+                         <img src="../image/first.jpg">
+                     </td>
+                     <td>【“互联网技术+平台型企业”】 徐工携手阿里“云端”布棋局</td>
+                 </tr>
+
+             </table>
+
+        </div>
+        <div class="secondleftnewsmobile"></div>
+
+
+    </div>
+
+
+    <div class="rightnews">
+
+        <div class="rightnewsdiv">
+            <h4>徐工环卫产品首次进驻菲律宾</h4>
+            <span>2016-05-13</span>
+            <p>
+
+                ﻿近日，从国家知识产权局传来喜讯，徐工环境2项发明专利获国家授权。此2项发明专利分别是一种侧装式垃圾车和一种可单边作业的洗扫车吸嘴及其操作方法。 徐工环...
+
+            </p>
+
+        </div>
+        <div class="rightnewsdiv">
+            <h4>徐工环卫产品首次进驻菲律宾</h4>
+            <span>2016-05-13</span>
+            <p>
+
+                ﻿近日，从国家知识产权局传来喜讯，徐工环境2项发明专利获国家授权。此2项发明专利分别是一种侧装式垃圾车和一种可单边作业的洗扫车吸嘴及其操作方法。 徐工环...
+
+            </p>
+
+        </div>
+        <div class="rightnewsdiv">
+
+            <h4>徐工环卫产品首次进驻菲律宾</h4>
+            <span>2016-05-13</span>
+            <p>
+
+                ﻿近日，从国家知识产权局传来喜讯，徐工环境2项发明专利获国家授权。此2项发明专利分别是一种侧装式垃圾车和一种可单边作业的洗扫车吸嘴及其操作方法。 徐工环...
+
+            </p>
+        </div>
+
+    </div>
+
+    <!-- 了解徐工-->
+    <div class="showxg">
+
+         <div class="left">
+             <!-- 电脑版代码-->
+             <div class="ljxg">
+                 <h1>了解徐工</h1>
+                 <table class="table1">
+                     <tr>
+                         <td><i></i>徐州是怎么样的一家公司</td>
+                         <td>徐州的技术创新</td>
+                     </tr>
+                     <tr>
+                         <td><i></i>徐州的发展印记</td>
+                         <td>徐州在全球的战略布局</td>
+                     </tr>
+                     <tr>
+                         <td><i></i>徐州崇尚的企业文化</td>
+                         <td>&nbsp;</td>
+                     </tr>
+
+                 </table>
+
+                 <table class="table2">
+                     <tr>
+                         <td class="td1">
+                             <img src="../image/bg1.jpg">
+                         </td>
+                         <td>
+                             <h2>社会责任</h2>
+                             <h4>大爱无疆，铁骨柔情</h4>
+                             <div class="catabt"></div>
+                         </td>
+                     </tr>
+                 </table>
+             </div>
+
+             <!-- 手机版代码-->
+             <div class="ljxgmobile">
+                 <h3>了解徐工</h3>
+                 <ul  >
+
+                         <li>徐州是怎么样的一家公司</li>
+                         <li>徐州的技术创新</li>
+                         <li>徐州的发展印记</li>
+                         <li>徐州在全球的战略布局</li>
+                         <li>徐州崇尚的企业文化</li>
+
+
+                 </ul>
+
+                <div class="imgdiv">
+
+                    <img src="../image/bg1.jpg">
+                    <div class="catabt"></div>
+                </div>
+
+                 <h3>社会责任</h3>
+                 <h4>大爱无疆，铁骨柔情</h4>
+
+
+             </div>
+
+         </div>
+
+         <div class="right">
+             <div class="imgdiv">
+                 <img src="../image/bg2.jpg">
+             </div>
+          <div class="ljxg">
+             <table>
+
+                 <tr>
+
+                     <td>
+                         <h2>让梦想在草原上自由飞翔——记徐工挖机内蒙古客户郭永强</h2>
+                         “敕勒川，阴山下，天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊”，一首豪放的民歌唱出了内蒙古大...
+                     </td>
+
+                     <td>
+
+                         <h2>让梦想在草原上自由飞翔——记徐工挖机内蒙古客户郭永强</h2>
+                         “敕勒川，阴山下，天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊”，一首豪放的民歌唱出了内蒙古大...
+
+                     </td>
+                 </tr>
+             </table>
+          </div>
+
+             <div class="ljxgmobile">
+                 <div class="last">
+                     <h4>让梦想在草原上自由飞翔——记徐工挖机内蒙古....</h4>
+                     “敕勒川，阴山下，天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊”，一首豪放的民歌唱出了内蒙古大.
+                 </div>
+
+                 <div class="last">
+                     <h4>让梦想在草原上自由飞翔——记徐工挖机内蒙古....</h4>
+                     “敕勒川，阴山下，天似穹庐，笼盖四野。天苍苍，野茫茫，风吹草低见牛羊”，一首豪放的民歌唱出了内蒙古大.
+                 </div>
+
+             </div>
+
+         </div>
+
+    </div>
+
+
+
+
+</div>
+
+<!--网页的结尾-->
+<footer>
+    <div class="footer">
+
+        @2015徐工集团工程机械有限公司 版权所有
+    </div>
+
+
+</footer>
+
+
+
+</body>
+</html>
